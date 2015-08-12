@@ -1,0 +1,27 @@
+{
+  "name": "meteor dragula",
+  "main": "dragula.js",
+  "version": "0.0.1",
+  "authors": [
+    "Paul van Zyl <paul@nonacreative.com>"
+  ],
+  "description": "meteor package for dragula",
+  "keywords": [
+    "drag",
+    "drop",
+    "js",
+    "meteor"
+  ],
+  "license": "MIT",
+  "homepage": "http://bevacqua.github.io/dragula",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dragula.js": "~3.0.3"
+  }
+}

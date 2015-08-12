@@ -1,0 +1,61 @@
+<!-- <head>
+  <title>subsort</title>
+</head>
+
+<body>
+  <h1>persist a list</h1>
+  {{> loginButtons}}
+  {{> staticList}}
+  {{> items}}
+  {{> dynList}}
+</body>
+
+<template name="staticList">
+  <ul class="staticlist">
+    <li>Item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+  </ul>
+</template>
+
+<template name="items">
+<h2>Items</h2>
+<form id="addone">
+  <input type="text" class='title'>
+  <input type="submit">
+</form>
+
+
+  <ul class="items">
+    {{#each items}}
+      {{> item}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="item">
+  <li>
+    {{ title }}
+    <a href="#" class="add">add to my items</a>
+  </li>
+</template>
+
+<template name="dynList">
+<h2>dyn list</h2>
+  <ul class="dynlist">
+    {{#each items}}
+      {{> ditem}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="ditem">
+  <li>
+    {{ this.title }}
+    {{ this.index }}
+    <a href="#" class="add">remove from my items</a>
+  </li>
+</template>
+ -->

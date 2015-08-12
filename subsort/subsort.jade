@@ -1,0 +1,36 @@
+head
+  title subsort
+body
+  h1 persist a list
+  +loginButtons
+  +staticList
+  +items
+  +dynList
+template(name='staticList')
+  ul.staticlist
+    li Item 1
+    li item 2
+    li item 3
+    li item 4
+    li item 5
+template(name='items')
+  h2 Items
+  form#addone
+    input.title(type='text')
+    input(type='submit')
+  ul.items
+    each items
+      +item
+
+template(name='item')
+  li= title
+    a.add(href='#') add to my items
+template(name='dynList')
+  h2 dyn list
+  ul.dynlist
+    each items
+      +ditem
+    
+template(name='ditem')
+  li {{this.title }} - {{ this.index }}
+    a.add(href='#') remove from my items
